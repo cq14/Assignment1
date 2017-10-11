@@ -1,0 +1,76 @@
+5a. Please paste the console output you saved at the end of step 3
+	
+	carlo@DESKTOP-BA6AV15 MINGW64 ~/Assignment1 (master)
+	$ git push
+	Counting objects: 10, done.
+	Delta compression using up to 8 threads.
+	Compressing objects: 100% (7/7), done.
+	Writing objects: 100% (10/10), 1.20 KiB | 615.00 KiB/s, done.
+	Total 10 (delta 3), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+	To https://github.com/cq14/Assignment1
+		fbdbe93..7049621  master -> master
+		
+5b. How many commits have been done to the repository so far? What 
+	command have you used?
+	
+	10 commits
+	$git log
+	
+5c. When was the file .gitignore modified last? What command was used?
+
+	September 27 2017 - 16:31:42
+	$ git log .gitignore
+	
+5d. Please list the IDs of the commits used to merge the changes from
+	the branch "development" to the branch "master"
+	
+	commit 36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+	commit cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+	git log --merges
+	
+5e. Mention two reasons for branches
+
+	- So developers could make sure their code changes are verified
+	before delivering to other developers. Essentially to allow people
+	to work in parallel
+	- So developers could isolate their changes among the team. So for 
+	example, there could be a branch for new features, and a separate branch 
+	for bug fixes.
+	
+5f. Difference between git log and git status
+
+	git log focus/displays commit history, while git status inspects the 
+	working directory/staging area.
+	
+5g. What command would you use to see the commits where Weapon.h was one of
+	the committed files.
+	
+	git log --follow Weapon.h
+
+5h. What command would you use to see the commites whose commit message
+	contains the word file
+
+	git log --all --grep="file"
+
+5i. In the context of Object Oriented programming
+	What is inheritance?
+		Ability for classes to receive the properties and functions of 
+		already existing class. A child class would receive certain
+		attributes from its parent class which it is derived from. 
+		In OO Programming, there is a different access control within
+		the class declaration file called "protected", which allows child 
+		classes to access the certain property.
+	
+	What is plymorphism?
+		the ability for a programming language to process objects differently
+		based on their data type or class. Polymorphism gives the ability to
+		redefine methods for classes.
+		
+	What is encapsulation?
+		Encapsulation is the restriction of direct access to an object's
+		member functions and member variables. Key words in a class declaration
+		defines the exclusiveness of an objects properties: Public, private,
+		protected, and these properties help prevent UNWANTED parties to have
+		access to the class properties.
+		
