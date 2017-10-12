@@ -74,3 +74,10 @@
 		protected, and these properties help prevent UNWANTED parties to have
 		access to the class properties.
 		
+7. Is the RoleGame prototype using polymorphism or encapsulation?
+
+	I believe that the RoleGame prototype utilizes encapsulation. The class, from 
+	Weapon.h have specific functions and attributes that WeaponFactory.h depend on.
+	On an upper level, specific weapons such as SimpleAxe depends on WeaponFactory in 
+	a similar way. The member variables are exclusive to their child classes through the
+	object property "protected."
