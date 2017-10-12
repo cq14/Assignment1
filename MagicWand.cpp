@@ -19,5 +19,5 @@ double MagicWand::hit(double armor){
 		return damage;
 		
 	}
-	return armor;
+	return armor+30;
 }
